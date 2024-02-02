@@ -7,3 +7,8 @@ this script require some python modules:
 - argparse
 - termcolor
 - sys
+
+
+#### USAGE: python3 searchIntoFiles.py -k [KEYWORD] -p [PATH]
+
+###### EXEMPLE: python3 searchIntoFiles.py -k keyword -p "/home/user/directories"
