@@ -1,14 +1,40 @@
-# searchIntoFiles
-is a Python script for recursive keyword search in text files within directories. It supports various encoding formats, highlights relevant paths and lines in the results, and provides performance metrics. Ideal for quick data analysis and research across extensive file collections.
+# Search Into Files
 
-this script require some python modules:
-- os
-- time
-- argparse
-- termcolor
-- sys
+## Description
+"Search Into Files" is a Python script designed for efficiently searching keywords within text files across multiple directories. This tool is perfect for sifting through large data sets or collections of documents to quickly find specific information.
 
+## Features
+- **Recursive Search**: Navigate through all subdirectories of a given root directory, ensuring no file is missed.
+- **Keyword Highlighting**: Identify and highlight the specific line containing the keyword in each file.
+- **Multiple Encoding Support**: Capable of reading files with various encodings, such as UTF-8 and ISO-8859-1.
+- **Performance Metrics**: Track and display the total number of files processed, files containing the keyword, and the script's execution time.
 
-#### USAGE: python3 searchIntoFiles.py -k [KEYWORD] -p [PATH]
+## Requirements
+- Python 3.x
+- `termcolor` package
 
-###### EXEMPLE: python3 searchIntoFiles.py -k keyword -p "/home/user/directories"
+To install the required package, run:
+```
+pip install termcolor
+```
+
+## Usage
+Run the script from the command line using the following format:
+```
+python3 searchIntoFiles.py -k [KEYWORD] -p [PATH_TO_DIRECTORY]
+```
+- `-k` or `--keyword`: Specify the keyword to search for.
+- `-p` or `--path`: Specify the root directory for the search.
+
+## Example
+```
+python3 searchIntoFiles.py -k "example keyword" -p "/path/to/directory"
+```
+
+## Author
+- **Juan Frugeri**
+- [Github: jfrugeri](https://github.com/jfrugeri)
+
+## License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
+```
